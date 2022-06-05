@@ -35,8 +35,8 @@
 
 alias gce="gcloud compute instances"
 alias vmlist="gce list"
-alias vmstop="gce stop lamlevm"
-alias vmstart="gce start lamlevm"
+alias vmstop="gce stop sanglevm"
+alias vmstart="gce start sanglevm"
 
 ```
 
@@ -46,10 +46,10 @@ alias vmstart="gce start lamlevm"
 
 ```
 
-Host lamlevm
-HostName 34.81.69.95
-User lucas_nguyen
-IdentityFile ~/.ssh/lephamngoclam.pub
+Host $yourVMname
+HostName #yourVMIP
+User $userNameWhenCreateVM
+IdentityFile $pathToPubKey
 
 ```
 
@@ -74,15 +74,4 @@ IdentityFile ~/.ssh/lephamngoclam.pub
 ```
     vmstop
     vmlist
-```
-
-
-
-TERMINATED VM STATUS example
-
-```
-
-NAME          ZONE          MACHINE_TYPE   PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP  STATUS
-email-server  asia-east1-b  n2-standard-8               10.140.0.3   34.81.69.95  TERMINATED
-
 ```
