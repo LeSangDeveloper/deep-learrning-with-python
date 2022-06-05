@@ -12,11 +12,11 @@
     gcloud auth login
 ```
 
-## set Memo as default project
+## set your project as default project
 
 
 ```
-    gcloud config set project memo-340322
+    gcloud config set project $yourProject
 ```
 
 
