@@ -5,6 +5,8 @@ gcloud compute firewall-rules create http-node --allow tcp:5000-65000 --source-t
 
 gcloud compute machine-types list --zone asia-northeast1-b
 
+gcloud compute firewall-rules create http-node --allow tcp:6000-9000 --source-tags=$vmName --source-ranges=0.0.0.0/0 --description="allow jupyter notebook http ports"
+
 # provisioning new Dev VM
 # new high CPU instance template at Đài Loan - Taiwan - asia-east1
 # 8vCPU - 32GB RAM
